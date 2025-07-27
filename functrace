@@ -1,0 +1,13 @@
+#!/bin/sh
+pushd /sys/kernel/tracing
+
+echo 0 > tracing_on
+
+echo function_graph > current_tracer
+
+echo "$1" >> set_ftrace_filter
+
+echo > trace
+
+echo 1 > tracing_on
+
