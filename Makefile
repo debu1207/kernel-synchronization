@@ -14,7 +14,8 @@ all:
 #obj-m += atomic.o
 #obj-m += atomicbits.o
 #obj-m += spinlockmod.o
-obj-m += dynamic_spinlock.o
+#obj-m += dynamic_spinlock.o
+obj-m += spinlock-usage.o
 
 clean:
 	rm -rf *.o *.ko *.mod.c .an* .lab* .tmp_versions Module.symvers Module.markers modules.order .*.cmd *.mod
